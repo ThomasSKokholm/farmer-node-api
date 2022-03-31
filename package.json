@@ -18,7 +18,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "cucumber-js test",
+    "test": "jest --forceExit --coverage --verbose --maxWorkers=1",
     "jest": "jest --watchAll --verbose --maxWorkers=1",
     "start": "node app.js"
   },

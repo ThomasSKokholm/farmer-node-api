@@ -13,3 +13,8 @@ test('user.generateAuthToken - burde returner en gyldig token', () => {
     const decoded = jwt.verify(token, config.get("jwtPrivateKey"));
     expect(decoded).toMatchObject({_id: id});
 });
+
+// luk efter sidst 
+afterAll(async () =>  {
+    await mongoose.connection.close();
+});

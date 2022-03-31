@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "623480ed98b9920e9805f185"
+  },
+  "navn": "Hans Hansen",
+  "adresse": "Bondegård 1",
+  "by": "7800 Skive",
+  "tlf": "50-20-73-48",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6234811698b9920e9805f187"
+  },
+  "navn": "Karl Søndergaard",
+  "adresse": "Industrivej 41",
+  "by": "7330 Brande",
+  "tlf": "71-83-59-54",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6234812198b9920e9805f189"
+  },
+  "navn": "Jens S. Mathiasen",
+  "adresse": "Ådalen 94",
+  "by": "7800 Skive",
+  "tlf": "23-65-14-68",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6234812c98b9920e9805f18b"
+  },
+  "navn": "Freja L. Juhl",
+  "adresse": "Slotsgade 19",
+  "by": "4895 Errindlev",
+  "tlf": "60-64-65-09",
+  "__v": 0
+}]

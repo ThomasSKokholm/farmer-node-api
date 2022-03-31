@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "cucumber": "^6.0.5",
+    "debug": "^4.3.4",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.7"
+  },
+  "name": "crud",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "cucumber-js test",
+    "jest": "jest --watchAll --verbose --maxWorkers=1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}

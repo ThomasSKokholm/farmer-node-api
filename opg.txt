@@ -1,0 +1,6 @@
+Ved hjælp af Node og express frameworket -
+    Lav et simpelt API der kan:
+        vise, oprette, redigere og slette
+    produkter i et array i hukommelsen.
+    Test at det virker i Postman.
+    Aflever JavaScript og package.json her.

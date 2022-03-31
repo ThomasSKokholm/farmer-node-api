@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6239997937d98fe748dc2795"
+  },
+  "username": "thomas",
+  "email": "thom520a@skivecollege.dk",
+  "password": "DuGætterDetAldrig",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62399e0459ab3784d555f28b"
+  },
+  "username": "thomas2",
+  "email": "thomas@skivecollege.dk",
+  "password": "$2b$10$SL.oS9es8LqmMLtEolp/0emaN.vM2udMg75qZMhdSVvcRD2NrIwJ.",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6239adfe95d0ffdd2e7d8504"
+  },
+  "username": "thomas3",
+  "email": "toma@skivecollege.dk",
+  "password": "$2b$10$tCcstl00sqRtGUMDyqe3BOCPSmSiyEcav3TfCivKO5oCvN7f.vUZO",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6239b08ba1dbd16324b49401"
+  },
+  "username": "thomas4",
+  "email": "tom@skivecollege.dk",
+  "password": "$2b$10$qavct8A5JMn7wdkgkX6O6OoZrhniR4IvbK.ynoya7dzF/26Xxj8lS",
+  "isAdmin": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6239b291811fd8c3853b6593"
+  },
+  "username": "thomas5",
+  "email": "tomat@skivecollege.dk",
+  "password": "$2b$10$JvQyEVnrs0Z.WIbeS./DF.8R2Ye9XseYBUhk.MagxfBrltDZH2ndC",
+  "isAdmin": true,
+  "__v": 0
+}]

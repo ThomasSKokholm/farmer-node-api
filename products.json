@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "623477721e905fdb0979c8e3"
+  },
+  "cat": "grøntsager",
+  "title": "Kartofler",
+  "descr": "2 kg Linzer kartofler",
+  "img": "kartofler.jpg",
+  "amount": 2,
+  "unit": "kg",
+  "price": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "623478d11e905fdb0979c8e6"
+  },
+  "cat": "grøntsager",
+  "title": "Ærter",
+  "descr": "500 g ærter fra egen avl",
+  "img": "aerter.jpg",
+  "amount": 500,
+  "unit": "gram",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62347cbc4aaf3d7b7359e6e8"
+  },
+  "cat": "frugt",
+  "title": "Jordbær",
+  "descr": "Dagfriske jordbær fra egen mark",
+  "img": "jordbaer.jpg",
+  "amount": 500,
+  "unit": "gram",
+  "price": 30,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62347ce24aaf3d7b7359e6ea"
+  },
+  "cat": "grøntsager",
+  "title": "Gulerødder",
+  "descr": "I tre forskellige farver",
+  "img": "guleroedder.jpg",
+  "amount": 1,
+  "unit": "kg",
+  "price": 20,
+  "__v": 0
+}]

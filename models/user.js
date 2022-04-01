@@ -1,11 +1,10 @@
 const config = require("config");
 const bcrypt = require('bcrypt');
 const lodash = require('lodash');
-const Joi = require("Joi");
+const joi = require("joi");
 const mongoose = require("mongoose");
 
 const jwt = require('jsonwebtoken');
-const { func } = require('Joi');
 
 const userSchema = new mongoose.Schema({
     username: {type: String, required: true},
@@ -32,11 +31,11 @@ userSchema.methods.generateAuthToken = function(){
 const User = mongoose.model("User", userSchema);
 
 function validateUser(usr){
-    const schema = Joi.object({
-        username: Joi.string().required(),
-        email: Joi.string().required().email().min(6).max(255),
-        password: Joi.string().required(),
-        isAdmin: Joi.boolean().required()// <- enum?
+    const schema = joi.object({
+        username: joi.string().required(),
+        email: joi.string().required().email().min(6).max(255),
+        password: joi.string().required(),
+        isAdmin: joi.boolean().required()// <- enum?
     });
     return schema.validate(usr);
 }

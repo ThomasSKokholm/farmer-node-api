@@ -1,5 +1,5 @@
-const { number } = require("Joi");
-const Joi = require('joi');
+const { number } = require("joi");
+const joi = require('joi');
 const mongoose = require('mongoose');
 // Objekt typen Product
 // Katetegori,Title,Beskrivelse,Sti til billede,Antal,Enhed,Pris;
@@ -23,7 +23,7 @@ let products = new Array(
 );
 
 function validateProdukt(product){
-    const schema = Joi.object({name: Joi.string()
+    const schema = joi.object({name: joi.string()
     .min(5)
     .max(50)
     .required()});

@@ -1,5 +1,6 @@
 {
     "jwtPrivateKey": "lf_jwtPrivateKey",
     "cmd": "set lf_jwtPrivateKey=SuperHemligKode",
-    "pws": "$env:lf_jwtPrivateKey='SuperHemligKode'"
+    "pws": "$env:lf_jwtPrivateKey='SuperHemligKode'",
+    "db": "lf_DB"
 }

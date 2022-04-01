@@ -1,5 +1,5 @@
-const { number } = require("Joi");
-const Joi = require("Joi");
+const { number } = require("joi");
+const joi = require("joi");
 const mongoose = require("mongoose");
 
 const farmerSchema = new mongoose.Schema({
@@ -12,11 +12,11 @@ const farmerSchema = new mongoose.Schema({
 const Farmer = mongoose.model("Farmers", farmerSchema);
 
 function validateFarmer(farmer) {
-    const schema = Joi.object({
-      navn: Joi.string().min(3).required(),
-      adresse: Joi.string().min(3).required(),
-      by: Joi.string().min(4),
-      tlf: Joi.string().min(8)
+    const schema = joi.object({
+      navn: joi.string().min(3).required(),
+      adresse: joi.string().min(3).required(),
+      by: joi.string().min(4),
+      tlf: joi.string().min(8)
     });
     return schema.validate(farmer);
 }

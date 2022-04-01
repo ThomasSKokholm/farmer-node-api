@@ -1,5 +1,5 @@
 // const { number } = require("Joi");
-const Joi = require("Joi");
+const joi = require("joi");
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
@@ -16,15 +16,15 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("Products", productSchema);
 
 function validateProduct(prod) {
-  const schema = Joi.object({
-    cat: Joi.string().min(3).required(),
-    title: Joi.string().min(3).required(),
-    img: Joi.string().min(5),
-    descr: Joi.string().max(255),
-    amount: Joi.number().integer().min(0).required(),
-    unit: Joi.string().required(),
-    price: Joi.number().required(),
-    farmer: Joi.string().required()
+  const schema = joi.object({
+    cat: joi.string().min(3).required(),
+    title: joi.string().min(3).required(),
+    img: joi.string().min(5),
+    descr: joi.string().max(255),
+    amount: joi.number().integer().min(0).required(),
+    unit: joi.string().required(),
+    price: joi.number().required(),
+    farmer: joi.string().required()
   });
 
   return schema.validate(prod);

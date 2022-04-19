@@ -5,6 +5,7 @@ const products = require('../routes/products');
 const product = require('../routes/product');
 const farmer = require('../routes/farmer');
 const user = require('../routes/user');
+const login = require('../routes/login');
 
 
 module.exports = function (app) {
@@ -16,4 +17,5 @@ module.exports = function (app) {
     app.use("/api/product", product);
     app.use("/api/farmer", farmer);
     app.use("/api/user", user);
+    app.use("/api/login", login);
 };

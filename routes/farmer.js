@@ -3,20 +3,22 @@ const router = express.Router();
 // const { Product, validate } = require("../models/product");
 // const {products, validate} = require('../models/products');
 const { Farmer, validate } = require("../models/farmer");
+const validateObjectId = require("../middleware/validateObjectId");
+const auth = require("../middleware/auth");
 const debug = require("debug")("app:http");
 
 router.get("/", async (req, res) => {
     res.send(await Farmer.find().sort("navn"));
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async (req, res) => {
     const farmer = await Farmer.findById(req.params.id); //products.find((p) => p.id === parseInt(req.params.id));
     if (!farmer) return res.status(404).send(`Farmeren findes ikke`);
 
     res.send(farmer);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", auth, async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
@@ -30,7 +32,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", [auth, validateObjectId], async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
@@ -54,7 +56,7 @@ router.put("/:id", async (req, res) => {
     }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", [auth, validateObjectId], async (req, res) => {
     const farmer = await Farmer.findByIdAndDelete(req.params.id);
     if (!farmer) return res.status(404).send("Farmeren findes ikke");
 
